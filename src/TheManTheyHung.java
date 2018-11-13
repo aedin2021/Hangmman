@@ -11,6 +11,7 @@ public class TheManTheyHung {
         String yes,no,maybe,know,what,good,bad,mississippi,word,name,school,back,mouse,computer,tank,mause,tiger,panther,day,night;
         String altf4,git_gud,scrub,over,power,health,games,control,java,hang,man,redit,twiter,social,media,CCN,news,pink,black,green;
         String purple,blue,brown,last,first,bye,sad,happy,pay,credit,job,debit,and,saboton,iron,fist,paper,money,cash,dough,something;
+
         do {
             System.out.println("This is a game of hang man, there can either be two players or there can be one.");
             System.out.println("Player one will pick a word and player two will be the one to guess that word.");
