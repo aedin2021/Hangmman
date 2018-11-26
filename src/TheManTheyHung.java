@@ -5,24 +5,31 @@ public class TheManTheyHung {
     public static void main(String args[]) {
         Scanner key = new Scanner(System.in);
         int playAgain;
-        int guesses;
+        int guesses,player;
         String TheWordToGuess, answer;
-        guesses=1;
+        guesses=0 ;
         String yes,no,maybe,know,what,good,bad,mississippi,word,name,school,back,mouse,computer,tank,mause,tiger,panther,day,night;
         String altf4,git_gud,scrub,over,power,health,games,control,java,hang,man,redit,twiter,social,media,CCN,news,pink,black,green;
         String purple,blue,brown,last,first,bye,sad,happy,pay,credit,job,debit,and,saboton,iron,fist,paper,money,cash,dough,something;
+        String Player;
+        int PlayerPoints;
+
+
 
         do {
+            System.out.println("What would you like you name to recorded as.");
+            Player=key.nextLine();
+            System.out.println(Player);
+            PlayerPoints=1200;
+            System.out.println(Player+" you will start with "+PlayerPoints+", ");
             System.out.println("This is a game of hang man, there can either be two players or there can be one.");
             System.out.println("Player one will pick a word and player two will be the one to guess that word.");
             System.out.println("First player one pick a word with player two looking away");
             TheWordToGuess = key.nextLine();
-
-            do {
-                guesses++;
-                System.out.println("I WILL REACH !@");
-            }while (guesses!=13);
-
+            player=key.nextByte();
+            if (guesses!=12){
+            guesses++;
+            System.out.println("Hi "+guesses);}
 
 
 
