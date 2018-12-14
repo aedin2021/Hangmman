@@ -5,35 +5,35 @@ public class TheManTheyHung {
     public static void main(String args[]) {
         Scanner key = new Scanner(System.in);
         int playAgain;
-        int guesses, player;
+        int guesses;
         String TheWordToGuess, answer;
-        guesses = 0;
-        String yes, no, maybe, know, what, good, bad, mississippi, word, name, school, back, mouse, computer, tank, mause, tiger, panther, day, night;
-        String altf4, git_gud, scrub, over, power, health, games, control, java, hang, man, redit, twiter, social, media, CCN, news, pink, black, green;
-        String purple, blue, brown, last, first, bye, sad, happy, pay, credit, job, debit, and, saboton, iron, fist, paper, money, cash, dough, something;
-        String Player;
-        int PlayerPoints;
-
+        guesses=1;
+        String yes,no,maybe,know,what,good,bad,mississippi,word,name,school,back,mouse,computer,tank,mause,tiger,panther,day,night;
+        String altf4,git_gud,scrub,over,power,health,games,control,java,hang,man,redit,twiter,social,media,CCN,news,pink,black,green;
+        String purple,blue,brown,last,first,bye,sad,happy,pay,credit,job,debit,and,saboton,iron,fist,paper,money,cash,dough,something;
 
         do {
-            System.out.println("What would you like you name to recorded as.");
-            Player = key.nextLine();
-            System.out.println(Player);
-            PlayerPoints = 1200;
-            System.out.println(Player + " you will start with " + PlayerPoints + ", ");
-            System.out.println("This is a game of hang man, there will be two players.");
+            System.out.println("This is a game of hang man, there can either be two players or there can be one.");
             System.out.println("Player one will pick a word and player two will be the one to guess that word.");
             System.out.println("First player one pick a word with player two looking away");
             TheWordToGuess = key.nextLine();
-            player = key.nextByte();
-            if (guesses != 12) {
+            System.out.println(String "yes,no,maybe,know,what,good,bad,mississippi,word,name,school,back,mouse,computer,tank,mause,tiger,panther,day,nightaltf4,git_gud,scrub,over,power,health,games,control,java,hang,man,redit,twiter,social,media,CCN,news,pink,black,green;\n" +
+                    "purple,blue,brown,last,first,bye,sad,happy,pay,credit,job,debit,and,saboton,iron,fist,paper,money,cash,dough,something;
+
+            do {
                 guesses++;
-                System.out.println("Hi " + guesses);
-            }
+                System.out.println("I WILL REACH !@");
+            }while (guesses!=13);
 
 
-            System.out.println("would you like to play again? 1 is yes 2 is no.");
-            playAgain = key.nextShort();
+
+
+
+
+
+
+            System.out.println("would you like to work a gain? 1 is yes 2 is no.");
+            playAgain = key.nextByte();
         } while (playAgain == 1);
         if (playAgain == 2) {
             System.out.println(" _____   ___  ___  ___ _____   _____  _   _ ___________ \n" +
@@ -45,7 +45,6 @@ public class TheManTheyHung {
         }
         System.out.println("Play again soon!");
     }
-
     public static void pictures(int TheMan[]) {
         /*"-------------------";
         "|                 |";
@@ -190,12 +189,4 @@ public class TheManTheyHung {
         "|               /   \\";
         "|";
         "====================";*/
-    }
-
-    public static void underscore(String repalce[]) {/*
-        String TheWordToGuess;
-        String _answer = TheWordToGuess;
-        _answer = _answer.replaceAll("[a-zA-Z]", "_");
-        System.out.println(_answer);*/
-    }
-}
+    } }
