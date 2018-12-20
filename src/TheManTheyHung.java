@@ -6,13 +6,16 @@ public class TheManTheyHung {
 
         int playAgain;
         int guesses;
-        String TheWordToGuess, Letter, TheAnswer;
+        boolean TheAnswer;
+        String TheWordToGuess, Letter,printArray;
         String yes, no, maybe, know, what, good, bad, mississippi, word, name, school, back, mouse, computer, tank, mause, tiger, panther, day, night;
         String altf4, git_gud, scrub, over, power, health, games, control, java, hang, man, redit, twiter, social, media, CCN, news, pink, black, green;
         String purple, blue, brown, last, first, bye, sad, happy, pay, credit, job, debit, and, saboton, iron, fist, paper, money, cash, dough, something;
-        guesses = 0;
+
 
         do {
+            guesses = 0;
+
             Scanner key = new Scanner(System.in);
 
             System.out.println("This is a game of hang man, there can either be two players or there can be one.");
@@ -27,14 +30,22 @@ public class TheManTheyHung {
 
             TheWordToGuess = key.nextLine();
 
+
+
             String asterisk = new String(new char[TheWordToGuess.length()]).replace("\0", "_");
+
             TheWordToGuess = TheWordToGuess.replaceAll("[a-zA-Z]", "_");
 
             System.out.println(TheWordToGuess);
 
-            System.out.println("would you like to work a gain? 1 is yes 2 is no.");
+            while(!TheAnswer && guesses!=7){
+                System.out.println("Enter a single letter");
 
-            playAgain = key.nextByte();
+                char input = Scanner.nextLine().charAT(0);
+
+
+            }
+
 
             String newasterisk = "";
             for (int i = 0; i < TheWordToGuess.length(); i++) {
@@ -55,6 +66,7 @@ public class TheManTheyHung {
             if (asterisk.equals(TheWordToGuess)) {
                 System.out.println("Correct! You win! The word was " + TheWordToGuess);
             }
+            guesses = 0;
 
             if (guesses == 1) {
                 System.out.println("Wrong guess again.");
@@ -224,6 +236,10 @@ public class TheManTheyHung {
                 System.out.println("|");
                 System.out.println("====================");
             }
+            System.out.println("would you like to work a gain? 1 is yes 2 is no.");
+
+            playAgain = key.nextByte();
+
             if (playAgain == 2) {
 
                 System.out.println(" _____   ___  ___  ___ _____   _____  _   _ ___________ \n" +
